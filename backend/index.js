@@ -13,5 +13,5 @@ app.use(cors({
 app.use(express.json());
 app.use("/api", routes);
 
-// Keep it API-only — no root page needed
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
