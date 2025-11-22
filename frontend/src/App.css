@@ -1,14 +1,14 @@
-/* General body and container */
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #e0e8fa, #daf4c3,#388e3c); /* soft gradient background */
+  background: linear-gradient(135deg, #e0e8fa, #daf4c3,#388e3c); 
   margin: 0;
   padding: 0;
   transition: background 1s ease-in-out;
   animation: bgAnimate 20s infinite alternate;
 }
 
-/* Animate background gradient */
+
 @keyframes bgAnimate {
   0% { background: linear-gradient(135deg, #e0f7fa, #f0f4c3); }
   50% { background: linear-gradient(135deg, #e4e8fc, #dc078a); }
@@ -25,13 +25,13 @@ body {
   animation: fadeIn 1s ease;
 }
 
-/* Fade in animation */
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Heading */
+
 h1 {
   text-align: center;
   color: #00796b;
@@ -46,7 +46,7 @@ h1 {
   to { transform: translateY(0); opacity: 1; }
 }
 
-/* File input */
+
 input[type="file"] {
   display: block;
   margin-bottom: 15px;
@@ -57,7 +57,7 @@ input[type="file"]:hover {
   transform: scale(1.02);
 }
 
-/* Rules input stacked vertically */
+
 .rules-container {
   display: flex;
   flex-direction: column;
@@ -80,7 +80,7 @@ input[type="file"]:hover {
   transform: scale(1.02);
 }
 
-/* Button styling */
+
 button {
   background-color: #00796b;
   color: white;
@@ -99,7 +99,7 @@ button:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Table styling */
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -123,36 +123,36 @@ td {
   border-bottom: 1px solid #eee;
 }
 
-/* Alternate row colors */
+
 tr:nth-child(even) {
   background-color: #f3f6f9;
 }
 
-/* Pass/Fail colors */
+
 .pass {
-  color: #388e3c; /* dark green */
+  color: #388e3c; 
   font-weight: bold;
   transition: all 0.3s ease;
 }
 
 .fail {
-  color: #c62828; /* dark red */
+  color: #c62828; 
   font-weight: bold;
   transition: all 0.3s ease;
 }
 
-/* Row background for pass/fail */
+
 .pass-row {
-  background-color: #e8f5e9; /* light green */
+  background-color: #e8f5e9; 
   transition: background 0.5s ease;
 }
 
 .fail-row {
-  background-color: #ffebf6; /* light red */
+  background-color: #ffebf6; 
   transition: background 0.5s ease;
 }
 
-/* Row hover effect */
+
 tbody tr:hover {
   background-color: #f1f8ff;
   transition: 0.2s;
