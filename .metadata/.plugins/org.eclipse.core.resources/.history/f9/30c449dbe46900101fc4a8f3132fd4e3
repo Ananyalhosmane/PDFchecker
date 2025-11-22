@@ -1,0 +1,13 @@
+package coder;
+
+public class Test5 {
+	public static void main(String[] args){
+	        int[] prices = {7, 10, 1, 3, 6,9,2};
+	        int minPrice = prices[0], maxProfit = 0;
+	        for (int i = 1; i < prices.length; i++) {
+	            if (prices[i] < minPrice) minPrice = prices[i];
+	            else maxProfit = Math.max(maxProfit, prices[i] - minPrice);
+	        }
+	        System.out.println("Max Profit: " + maxProfit);
+	    }
+	}

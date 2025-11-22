@@ -1,0 +1,22 @@
+package coder;
+
+public class Test5 {
+	public static int price(int []pri) {
+		int min= pri[0];
+        int max = 0;
+
+        for (int i = 1; i < pri.length; i++) {
+            if (pri[i] < min) {
+                min = pri[i];
+            } else {
+                int pro = pri[i] - min;
+                if (pro > max) {
+                    max = pro;
+                }
+            }
+        }
+	public static void main(String[] args){
+	        int[] pri = {7, 10, 1, 3, 6,9,2};
+	        System.out.println("Max Profit: " +price(max));
+	}
+}

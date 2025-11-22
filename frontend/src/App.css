@@ -1,0 +1,160 @@
+/* General body and container */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0e8fa, #daf4c3,#388e3c); /* soft gradient background */
+  margin: 0;
+  padding: 0;
+  transition: background 1s ease-in-out;
+  animation: bgAnimate 20s infinite alternate;
+}
+
+/* Animate background gradient */
+@keyframes bgAnimate {
+  0% { background: linear-gradient(135deg, #e0f7fa, #f0f4c3); }
+  50% { background: linear-gradient(135deg, #e4e8fc, #dc078a); }
+  100% { background: linear-gradient(135deg, #0a6894, #cfbc12); }
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  animation: fadeIn 1s ease;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #00796b;
+  margin-bottom: 30px;
+  font-size: 28px;
+  animation: slideDown 1s ease;
+}
+
+/* Slide down animation for heading */
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* File input */
+input[type="file"] {
+  display: block;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+input[type="file"]:hover {
+  transform: scale(1.02);
+}
+
+/* Rules input stacked vertically */
+.rules-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.rules-container input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.rules-container input[type="text"]:focus {
+  border-color: #00796b;
+  box-shadow: 0 0 8px rgba(0, 121, 107, 0.3);
+  transform: scale(1.02);
+}
+
+/* Button styling */
+button {
+  background-color: #00796b;
+  color: white;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #004d40;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  font-size: 14px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  animation: fadeIn 1s ease;
+}
+
+th {
+  background-color: #00796b;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Alternate row colors */
+tr:nth-child(even) {
+  background-color: #f3f6f9;
+}
+
+/* Pass/Fail colors */
+.pass {
+  color: #388e3c; /* dark green */
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.fail {
+  color: #c62828; /* dark red */
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Row background for pass/fail */
+.pass-row {
+  background-color: #e8f5e9; /* light green */
+  transition: background 0.5s ease;
+}
+
+.fail-row {
+  background-color: #ffebf6; /* light red */
+  transition: background 0.5s ease;
+}
+
+/* Row hover effect */
+tbody tr:hover {
+  background-color: #f1f8ff;
+  transition: 0.2s;
+}
+

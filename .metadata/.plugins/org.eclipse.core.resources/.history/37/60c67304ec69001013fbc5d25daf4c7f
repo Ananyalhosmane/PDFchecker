@@ -1,0 +1,21 @@
+package coder;
+
+public class Test5 {
+		    public static void main(String[] args) {
+		        int[] arr = {6,1,7,3,8,9};
+		        int min =0;
+		        int max=0;
+		        int fir = min , sec= max;
+
+		        for (int num : arr) {
+		            if (num > fir) {
+		                sec= fir;
+		                fir = num;
+		            } else if (num > sec && num != fir) {
+		                sec = num;
+		            }
+		        }
+
+		        System.out.print("Second largest:"+sec);
+		    }
+}

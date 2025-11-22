@@ -1,0 +1,23 @@
+package coder;
+
+public class Test5 {
+	public static int maxsec(int[]arr) {
+		int min =0;
+        int max=0;
+        int fir = min;
+        int sec= max;
+
+        for (int n : arr) {
+            if (n > fir) {
+                sec= fir;
+                fir = n;
+            } else if (n > sec && n!= fir) {
+                sec = n;
+            }
+        }return sec;
+	}
+		    public static void main(String[] args) {
+		        int[] arr = {6,1,7,3,8,9};
+		        System.out.println("the second :"+maxsec(arr));
+		        }
+}

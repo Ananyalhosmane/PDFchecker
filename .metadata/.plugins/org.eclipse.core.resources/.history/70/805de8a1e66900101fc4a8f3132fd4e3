@@ -1,0 +1,26 @@
+package coder;
+
+public class Test4 {
+	public static int prices (int pri) {
+		if(pri !==null || pri==0) {
+		int min=pri[0];
+		int max=pri;
+		int res=0;
+		
+		for (int n=0 ;n<pri;n++) {
+			if(pri>max) pri+=r;
+			if(pri <max) 
+		}
+			
+		}
+			
+		
+			
+	}
+
+	public static void main(String[] args) {
+		int pri[]= {7,10,1,3,6,9,2}
+		
+	}
+
+}

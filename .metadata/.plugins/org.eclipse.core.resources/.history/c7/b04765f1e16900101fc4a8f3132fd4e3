@@ -1,0 +1,21 @@
+package coder;
+
+import java.util.Arrays;
+
+public class Test1 {
+	public static int rotate(int n) {
+		int rev=0;
+		if(n>0) {
+			int d =n%10;
+			rev=rev*10+d;
+			n /=10;
+		}
+		return rev;
+	}
+
+	public static void main(String[] args) {
+		int n = 1,2,3,4;
+		int res =n;
+		System.out.println("the rev ":+n);
+}
+}

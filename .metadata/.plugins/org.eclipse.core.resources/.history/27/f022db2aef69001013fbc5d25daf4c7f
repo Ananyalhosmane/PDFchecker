@@ -1,0 +1,13 @@
+package coder;
+
+public class Test5 {
+	 public static void main(String[] args) {
+		 int []arr= {2,3,-8,7,-1,2,3};
+		 int sum=0;
+		 for (int i=1;i<arr.length;i++) {
+			 if(arr[i]%sum==0)
+				 sum+=1;
+		 }System.out.println("the sum:"+arr);
+			 
+		 }
+		 

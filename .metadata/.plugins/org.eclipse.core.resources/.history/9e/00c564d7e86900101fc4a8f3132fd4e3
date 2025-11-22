@@ -1,0 +1,19 @@
+package coder;
+
+import java.util.Arrays;
+
+public class Test1 {
+	public static void main(String[] args) {
+		int []arr= {2,3,-8,7,-1,2,3};
+		int sum=11;
+		int index=0;
+		for (int i=1;i<arr.length-1;i++) 
+			for (int j=0;j<i;j++) {
+			 if (arr[i]+arr[j]==sum) {
+				 System.out.println("the rotated:"+sum);
+			 }
+		}
+	}
+}
+		
+		
