@@ -5,7 +5,7 @@ import pdfParse from "pdf-parse";
 const router = express.Router();
 const upload = multer({ storage: multer.memoryStorage() });
 
-// Smarter rule check (works with original backend)
+
 function checkRule(text, rule) {
   const lowerText = text.toLowerCase();
   const lowerRule = rule.toLowerCase();
@@ -15,7 +15,7 @@ function checkRule(text, rule) {
   let reasoning = "Rule checking not supported, default fail.";
   let confidence = 50;
 
-  // Simple keyword match
+  
   if (lowerRule.includes("title") && lowerText.includes("title")) {
     status = "pass";
     evidence = 'Found "title" in text';
@@ -42,7 +42,7 @@ function checkRule(text, rule) {
   return { status, evidence, reasoning, confidence };
 }
 
-// API endpoint
+
 router.post("/check-pdf", upload.single("pdf"), async (req, res) => {
   try {
     if (!req.file) return res.status(400).json({ error: "No PDF uploaded" });
